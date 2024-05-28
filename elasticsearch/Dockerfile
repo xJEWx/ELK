@@ -1,6 +1,6 @@
 FROM debian:latest
 RUN apt-get update && apt-get install -y wget gnupg
-ADD elasticsearch-8.10.2-amd64.deb /tmp/elasticsearch-8.10.2-amd64.deb
+ADD https://disk.yandex.ru/d/iTeGunblJU8UEg /tmp/elasticsearch-8.10.2-amd64.deb
 RUN dpkg -i /tmp/elasticsearch-8.10.2-amd64.deb
 RUN rm /tmp/elasticsearch-8.10.2-amd64.deb
 RUN mkdir -p /etc/elasticsearch
