@@ -4,6 +4,7 @@ network.host: 0.0.0.0
 http.port: 9200
 xpack.security.enabled: false
 xpack.security.enrollment.enabled: false
+discovery.type: single-node
 
 # Enable encryption for HTTP API client connections, such as Kibana, Logstash, and Agents
 xpack.security.http.ssl:
